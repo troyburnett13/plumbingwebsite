@@ -1,20 +1,20 @@
 :root {
-  --bg: #0b1220;
-  --card: rgba(255, 255, 255, 0.06);
-  --muted: #c5d0f5;
-  --text: #e9edff;
-  --accent: #7be0f1;
-  --accent-2: #ffcc6f;
-  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --bg: #f5f3ee;
+  --card: rgba(255, 255, 255, 0.9);
+  --muted: #4a5155;
+  --text: #0e161a;
+  --accent: #0fa3b1;
+  --accent-2: #f7c266;
+  --shadow: 0 14px 40px rgba(20, 30, 35, 0.18);
   --radius: 18px;
   font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  background: radial-gradient(circle at 10% 20%, rgba(123, 224, 241, 0.12), transparent 25%),
-              radial-gradient(circle at 90% 10%, rgba(255, 204, 111, 0.12), transparent 25%),
-              radial-gradient(circle at 50% 80%, rgba(99, 131, 255, 0.15), transparent 35%),
+  background: radial-gradient(circle at 16% 24%, rgba(15, 163, 177, 0.16), transparent 32%),
+              radial-gradient(circle at 82% 18%, rgba(247, 194, 102, 0.18), transparent 34%),
+              radial-gradient(circle at 54% 80%, rgba(13, 126, 139, 0.12), transparent 40%),
               var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -25,9 +25,9 @@ body {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
   mix-blend-mode: soft-light;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .nav-wrap {
@@ -39,13 +39,13 @@ body {
   justify-content: space-between;
   padding: 18px clamp(18px, 5vw, 48px);
   backdrop-filter: blur(14px);
-  background: rgba(11, 18, 32, 0.85);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(14, 22, 26, 0.06);
 }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.5px; }
 .logo .badge {
   background: var(--accent);
-  color: #052631;
+  color: #032026;
   padding: 6px 10px;
   border-radius: 12px;
   font-size: 12px;
@@ -60,20 +60,20 @@ button { cursor: pointer; border: none; }
 .ghost {
   background: transparent;
   color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(14, 22, 26, 0.12);
   border-radius: 999px;
   padding: 10px 16px;
   transition: all 0.2s ease;
 }
-.ghost:hover { border-color: var(--accent); color: var(--accent); }
+.ghost:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 8px 26px rgba(15, 163, 177, 0.24); }
 .ghost.small { padding: 8px 12px; font-size: 13px; }
 .ghost.full { width: 100%; text-align: center; }
 .solid {
-  background: linear-gradient(135deg, var(--accent), #87f7ff);
-  color: #04101b;
+  background: linear-gradient(135deg, var(--accent), #1bc4d6);
+  color: #041014;
   border-radius: 999px;
   padding: 12px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(15, 163, 177, 0.25);
   box-shadow: var(--shadow);
   font-weight: 700;
 }
@@ -127,6 +127,12 @@ input:focus, select:focus { outline: 2px solid var(--accent); }
 .acc-panel { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; padding: 0 14px; color: var(--muted); }
 .acc-panel.open { max-height: 200px; padding-top: 6px; }
 .list ul { display: grid; gap: 10px; margin: 12px 0; color: var(--muted); }
+.offerings .card.photo-card { padding: 0; overflow: hidden; }
+.offerings img { width: 100%; display: block; }
+.offerings .caption { padding: 12px 14px 14px; color: var(--muted); }
+.checklist { display: grid; gap: 12px; margin-top: 12px; }
+.check-item { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); margin-top: 6px; box-shadow: 0 0 0 4px rgba(123, 224, 241, 0.18); }
 
 .marquee { overflow: hidden; border-radius: var(--radius); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.03); }
 .marquee-track { display: flex; gap: 24px; padding: 16px; animation: scroll 20s linear infinite; }

@@ -1,0 +1,25 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgTech" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220" />
+      <stop offset="1" stop-color="#10233d" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#bgTech)" />
+  <rect x="120" y="80" width="380" height="200" rx="20" fill="#132842" stroke="#7be0f1" stroke-width="6" />
+  <rect x="140" y="110" width="150" height="80" rx="14" fill="#0b1628" stroke="#ffcc6f" stroke-width="6" />
+  <rect x="320" y="110" width="120" height="80" rx="14" fill="#0b1628" stroke="#7be0f1" stroke-width="5" />
+  <path d="M220 190c20 0 36 16 36 36v30h-72v-30c0-20 16-36 36-36Z" fill="#1f3c64" stroke="#7be0f1" stroke-width="5" />
+  <circle cx="220" cy="174" r="22" fill="#7be0f1" />
+  <circle cx="220" cy="166" r="10" fill="#0b1220" />
+  <path d="M214 216h12l6 36h-24l6-36Z" fill="#ffcc6f" />
+  <path d="M184 256h20l8 30h-24l-4-30Z" fill="#7be0f1" />
+  <path d="M232 256h20l4 30h-24l0-30Z" fill="#4cbdd6" />
+  <rect x="360" y="200" width="90" height="70" rx="14" fill="#0b1628" stroke="#7be0f1" stroke-width="6" />
+  <rect x="370" y="214" width="70" height="20" rx="10" fill="#7be0f1" />
+  <rect x="420" y="146" width="40" height="16" rx="8" fill="#ffcc6f" />
+  <path d="M410 126c0-16 12-28 28-28h40" stroke="#7be0f1" stroke-width="6" stroke-linecap="round" />
+  <rect x="170" y="260" width="100" height="12" rx="6" fill="#0b1628" />
+  <text x="150" y="60" fill="#7be0f1" font-family="'Space Grotesk', sans-serif" font-size="30" font-weight="700">Under-sink repair</text>
+  <text x="150" y="84" fill="#ffcc6f" font-family="'Space Grotesk', sans-serif" font-size="18">Clean, careful techs</text>
+</svg>
