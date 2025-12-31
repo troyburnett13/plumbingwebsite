@@ -1,0 +1,17 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220" />
+      <stop offset="1" stop-color="#0c1c34" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#bg3)" />
+  <rect x="220" y="60" width="200" height="240" rx="26" fill="#13233d" stroke="#7be0f1" stroke-width="6" />
+  <rect x="245" y="90" width="150" height="120" rx="16" fill="#0b1628" stroke="#ffcc6f" stroke-width="6" />
+  <circle cx="320" cy="230" r="16" fill="#7be0f1" />
+  <rect x="302" y="46" width="36" height="16" rx="8" fill="#7be0f1" />
+  <path d="M320 122c12 18 8 38-4 50s-12 28 4 42" stroke="#7be0f1" stroke-width="8" stroke-linecap="round" />
+  <path d="M320 122c-12 14-10 30 2 44s10 26-2 48" stroke="#ffcc6f" stroke-width="6" stroke-linecap="round" />
+  <text x="200" y="320" fill="#7be0f1" font-family="'Space Grotesk', sans-serif" font-size="30" font-weight="700">High-efficiency</text>
+  <text x="200" y="344" fill="#ffcc6f" font-family="'Space Grotesk', sans-serif" font-size="18">Water heater installs & maintenance</text>
+</svg>
