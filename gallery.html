@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Floyd's Plumbing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav-wrap">
+    <div class="logo">
+      <div class="badge">24/7</div>
+      <span>Floyd's Plumbing</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <button class="ghost" id="callNow">Call now</button>
+    </nav>
+    <button class="ghost mobile" id="navToggle">Menu</button>
+  </header>
+
+  <main>
+    <section class="strip">
+      <div class="pill">Gallery</div>
+      <h1>Recent work and the team behind it.</h1>
+      <p class="lede">Clean setups, tidy finishes, and the people you’ll meet at your door.</p>
+    </section>
+
+    <section class="strip gallery" id="gallery">
+      <div class="gallery-grid">
+        <figure class="tile">
+          <img src="images/istockphoto-1440019701-612x612.jpg" alt="Plumber repairing under-sink plumbing" />
+          <figcaption>Under-sink repairs with protective drop cloths and clean work areas.</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="images/istockphoto-2187421629-612x612.jpg" alt="Copper and PEX plumbing lines" />
+          <figcaption>Clean copper and PEX runs, secured and pressure-tested.</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="images/istockphoto-944254400-612x612.jpg" alt="Water heater being serviced" />
+          <figcaption>High-efficiency water heater installs, flushes, and safety checks.</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="images/gettyimages-2149864351-612x612.jpg" alt="Hydro-jetting drain equipment in action" />
+          <figcaption>Hydro-jetting and camera inspections to clear and diagnose tough drains.</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="images/gettyimages-2152727341-612x612.jpg" alt="Plumber replacing piping" />
+          <figcaption>Pipe repairs and reroutes done with minimal disruption.</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="images/istockphoto-1567984755-612x612.jpg" alt="Plumber working neatly under a sink" />
+          <figcaption>Friendly, background-checked crew dispatched from our local shop.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">Floyd's Plumbing</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-meta">Licensed • Bonded • Insured • CSLB #000000 | 24/7 Emergency Dispatch</div>
+  </footer>
+
+  <div class="toast" id="toast">Form submitted! We'll reach out shortly.</div>
+  <script src="script.js"></script>
+</body>
+</html>

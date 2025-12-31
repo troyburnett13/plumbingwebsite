@@ -17,30 +17,28 @@
       <span>Floyd's Plumbing</span>
     </div>
     <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#offerings">Offerings</a>
-      <a href="#why">Why Us</a>
-      <a href="#testimonials">Reviews</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
       <button class="ghost" id="callNow">Call now</button>
     </nav>
     <button class="ghost mobile" id="navToggle">Menu</button>
   </header>
 
-  <main>
+  <main class="home">
     <section class="hero" id="top">
       <div class="hero__left">
         <p class="eyebrow">Licensed • Bonded • Insured • Same-day solutions</p>
-        <h1>Reliable plumbing without the mess. <span class="accent">Floyd's got this.</span></h1>
-        <p class="lede">Serving homes and businesses with clean, courteous technicians, transparent pricing, and repairs that stick.</p>
+        <h1>Plumbing done right. <span class="accent">Floyd's keeps water where it belongs.</span></h1>
+        <p class="lede">Clean, courteous technicians, transparent pricing, and repairs that stick. 24/7 emergency dispatch across the metro.</p>
         <div class="cta-row">
-          <button class="solid" id="bookNow">Book a service</button>
-          <button class="ghost" id="estimateBtn">Free estimate</button>
+          <a class="solid" href="contact.html">Book a service</a>
+          <a class="ghost" href="services.html">See what we do</a>
           <div class="rating">★★★★★ <span>4.9/5 from 1,200+ locals</span></div>
         </div>
         <div class="chips">
-          <span>Leak detection</span><span>Water heaters</span><span>Drains</span><span>Remodels</span><span>Commercial</span>
+          <span>Emergency leaks</span><span>Drains</span><span>Water heaters</span><span>Remodels</span>
         </div>
       </div>
       <div class="hero__right">
@@ -49,139 +47,36 @@
           <div class="stat-label">Avg response time</div>
         </div>
         <img class="hero-img" src="images/istockphoto-1943281621-612x612.jpg" alt="Floyd's Plumbing technician working under a sink" />
-        <div class="card grid">
-          <div>
-            <h3>Emergency? Tap to call</h3>
-            <p>Direct line to dispatch—no bots.</p>
-            <a class="call" href="tel:18005551234">(800) 555-1234</a>
-          </div>
-          <div class="hero-form">
-            <h4>Quick quote</h4>
-            <form id="quoteForm">
-              <label>Service needed
-                <select name="service">
-                  <option>Leak repair</option>
-                  <option>Drain cleaning</option>
-                  <option>Water heater</option>
-                  <option>Fixture install</option>
-                  <option>Commercial</option>
-                </select>
-              </label>
-              <label>Zip code
-                <input type="text" name="zip" placeholder="e.g. 94105" required />
-              </label>
-              <label>Preferred time
-                <input type="datetime-local" name="time" />
-              </label>
-              <button type="submit" class="solid full">Get my quote</button>
-              <p class="tiny">By submitting you agree to be contacted by Floyd's Plumbing.</p>
-            </form>
-          </div>
+        <div class="card">
+          <h3>Need us now?</h3>
+          <p>Direct line to dispatch—no bots.</p>
+          <a class="solid full" href="tel:18005551234">Call (800) 555-1234</a>
         </div>
       </div>
     </section>
 
-    <section class="strip" id="services">
-      <div class="pill">Our capabilities</div>
-      <h2>Everything plumbing—handled cleanly.</h2>
+    <section class="strip" id="highlights">
+      <div class="pill">Popular services</div>
+      <h2>On-time help for the jobs you need most.</h2>
       <div class="service-grid">
         <article class="service">
           <div class="icon">🛠️</div>
-          <h3>Repairs & leaks</h3>
-          <p>Pinpoint diagnostics, pipe repairs, slab leaks, and fixture fixes without tearing up your home.</p>
-          <button class="ghost small" data-toggle="learn" data-target="repairs">Learn more</button>
-          <div class="drawer" id="repairs">
-            <ul>
-              <li>Pressure tests and camera scopes</li>
-              <li>Pipe re-routing and repipes</li>
-              <li>Garbage disposal and faucet repair</li>
-            </ul>
-          </div>
-        </article>
-        <article class="service">
-          <div class="icon">🔥</div>
-          <h3>Water heaters</h3>
-          <p>Tank and tankless installs, flushes, and repairs—efficient hot water with manufacturer-backed warranties.</p>
-          <button class="ghost small" data-toggle="learn" data-target="heaters">Learn more</button>
-          <div class="drawer" id="heaters">
-            <ul>
-              <li>Same-day swap outs</li>
-              <li>Anode rod replacement</li>
-              <li>Recirculation pumps</li>
-            </ul>
-          </div>
+          <h3>Emergency repairs</h3>
+          <p>Shutoffs, slab leaks, burst pipes, and fixture failures handled fast and clean.</p>
+          <a class="ghost small" href="services.html#repairs">View details</a>
         </article>
         <article class="service">
           <div class="icon">🚿</div>
           <h3>Drains & sewer</h3>
-          <p>Clogs cleared fast with hydro-jetting and trenchless repairs that keep your yard intact.</p>
-          <button class="ghost small" data-toggle="learn" data-target="drains">Learn more</button>
-          <div class="drawer" id="drains">
-            <ul>
-              <li>Camera inspections</li>
-              <li>Root intrusion treatment</li>
-              <li>Clean-out installs</li>
-            </ul>
-          </div>
+          <p>Snaking, hydro-jetting, camera inspections, and trenchless spot repairs.</p>
+          <a class="ghost small" href="services.html#drains">View details</a>
         </article>
         <article class="service">
-          <div class="icon">🏢</div>
-          <h3>Commercial</h3>
-          <p>Compliance-ready for restaurants, offices, and multifamily with maintenance plans that prevent downtime.</p>
-          <button class="ghost small" data-toggle="learn" data-target="commercial">Learn more</button>
-          <div class="drawer" id="commercial">
-            <ul>
-              <li>Grease trap service</li>
-              <li>Backflow testing</li>
-              <li>Preventative maintenance routes</li>
-            </ul>
-          </div>
+          <div class="icon">🔥</div>
+          <h3>Water heaters</h3>
+          <p>Tank/tankless installs, flushes, anode rods, and recirculation pumps.</p>
+          <a class="ghost small" href="services.html#heaters">View details</a>
         </article>
-      </div>
-    </section>
-
-    <section class="split offerings" id="offerings">
-      <div>
-        <div class="pill">Services offered</div>
-        <h2>All the plumbing help you need, in one call.</h2>
-        <p class="lede">From emergencies to upgrades, Floyd's covers every fixture, line, and appliance that moves water or gas.</p>
-        <div class="checklist">
-          <div class="check-item"><span class="dot"></span><div><strong>Emergency repairs</strong><br />Burst pipes, leaks, no-hot-water, overflows.</div></div>
-          <div class="check-item"><span class="dot"></span><div><strong>Drain & sewer</strong><br />Snaking, hydro-jetting, trenchless spot repairs, clean-outs.</div></div>
-          <div class="check-item"><span class="dot"></span><div><strong>Water heaters</strong><br />Tank/tankless installs, flushes, anode rods, recirc pumps.</div></div>
-          <div class="check-item"><span class="dot"></span><div><strong>Fixtures & remodels</strong><br />Showers, faucets, toilets, garbage disposals, kitchen/bath rough-ins.</div></div>
-          <div class="check-item"><span class="dot"></span><div><strong>Repipes & reroutes</strong><br />Copper/PEX repipes, slab leak reroutes, pressure balancing.</div></div>
-          <div class="check-item"><span class="dot"></span><div><strong>Water quality & gas</strong><br />Filtration/softeners, gas line repairs, shutoff valves, code upgrades.</div></div>
-        </div>
-      </div>
-      <div class="card photo-card">
-        <img src="images/istockphoto-1567984755-612x612.jpg" alt="Plumber working neatly under a sink" />
-        <div class="caption">Clean, uniformed techs with shoe covers and drop cloths.</div>
-      </div>
-    </section>
-
-    <section class="split" id="why">
-      <div>
-        <div class="pill">Why Floyd's</div>
-        <h2>Clean, courteous, on-time. Every visit.</h2>
-        <p>We show up ready: fully stocked vans, shoe covers, up-front pricing, and tidy clean-up. Your project stays on schedule and on budget.</p>
-        <div class="accordions">
-          <button class="acc-btn" data-acc="pricing">Up-front pricing</button>
-          <div class="acc-panel" id="pricing">Transparent line items before we begin—no surprises.</div>
-          <button class="acc-btn" data-acc="warranty">Warranty-first</button>
-          <div class="acc-panel" id="warranty">Backed by manufacturer warranties and our workmanship guarantee.</div>
-          <button class="acc-btn" data-acc="safety">Respectful techs</button>
-          <div class="acc-panel" id="safety">Background-checked, uniformed techs who protect your space.</div>
-        </div>
-      </div>
-      <div class="card list">
-        <h3>Service plans</h3>
-        <ul>
-          <li><strong>Priority Response</strong> — 2-hour arrival window</li>
-          <li><strong>Annual Flush</strong> — water heater + inspection</li>
-          <li><strong>Smart Home Check</strong> — leak sensors and shutoff</li>
-        </ul>
-        <button class="solid full">Enroll now</button>
       </div>
     </section>
 
@@ -197,81 +92,15 @@
         </div>
       </div>
     </section>
-
-    <section class="strip gallery" id="gallery">
-      <div class="pill">See the work</div>
-      <h2>Modern equipment, tidy results.</h2>
-      <p class="lede">From camera scopes to tankless installs, we bring clean tools and buttoned-up finishes to every job.</p>
-      <div class="gallery-grid">
-        <figure class="tile">
-          <img src="images/istockphoto-1440019701-612x612.jpg" alt="Plumber repairing under-sink plumbing" />
-          <figcaption>Under-sink repairs with protective drop cloths and clean work areas.</figcaption>
-        </figure>
-        <figure class="tile">
-          <img src="images/istockphoto-2187421629-612x612.jpg" alt="Copper and PEX plumbing lines" />
-          <figcaption>Clean copper and PEX runs, secured and pressure-tested.</figcaption>
-        </figure>
-        <figure class="tile">
-          <img src="images/istockphoto-944254400-612x612.jpg" alt="Water heater being serviced" />
-          <figcaption>High-efficiency water heater installs, flushes, and safety checks.</figcaption>
-        </figure>
-        <figure class="tile">
-          <img src="images/gettyimages-2149864351-612x612.jpg" alt="Hydro-jetting drain equipment in action" />
-          <figcaption>Hydro-jetting and camera inspections to clear and diagnose tough drains.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div>
-        <div class="pill">Ready?</div>
-        <h2>Book your visit</h2>
-        <p>Tell us what you need and we'll confirm a tech and arrival time.</p>
-        <form class="contact-form" id="contactForm">
-          <label>Name
-            <input type="text" name="name" required />
-          </label>
-          <label>Email
-            <input type="email" name="email" required />
-          </label>
-          <label>Phone
-            <input type="tel" name="phone" required />
-          </label>
-          <label>Service needed
-            <input type="text" name="need" placeholder="e.g. leaking shower valve" required />
-          </label>
-          <label>Preferred date
-            <input type="date" name="date" />
-          </label>
-          <button type="submit" class="solid full">Request visit</button>
-          <div class="form-status" id="formStatus"></div>
-        </form>
-      </div>
-      <div class="info card">
-        <h3>Coverage map</h3>
-        <p>Serving the metro area with same-day availability in most neighborhoods.</p>
-        <div class="badges">
-          <span class="tag">Emergency</span>
-          <span class="tag">Residential</span>
-          <span class="tag">Commercial</span>
-        </div>
-        <div class="cta-row">
-          <a class="ghost full" href="tel:18005551234">Call dispatch</a>
-          <a class="ghost full" href="mailto:hello@floydsplumbing.com">Email</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
     <div class="logo">Floyd's Plumbing</div>
     <div class="footer-links">
-      <a href="#services">Services</a>
-      <a href="#offerings">Offerings</a>
-      <a href="#why">Guarantee</a>
-      <a href="#testimonials">Reviews</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Book</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </div>
     <div class="footer-meta">Licensed • Bonded • Insured • CSLB #000000 | 24/7 Emergency Dispatch</div>
   </footer>

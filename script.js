@@ -1,4 +1,4 @@
-const navToggle = document.getElementById('navToggle');
+﻿const navToggle = document.getElementById('navToggle');
 const nav = document.querySelector('.nav');
 const callNow = document.getElementById('callNow');
 const bookNow = document.getElementById('bookNow');
@@ -17,11 +17,16 @@ const showToast = (message) => {
 };
 
 const scrollToContact = () => {
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    window.location.href = 'contact.html';
+  }
 };
 [callNow, bookNow, estimateBtn].forEach((btn) => btn?.addEventListener('click', scrollToContact));
 
-// Learn-more drawers
+// Learn-more drawers (services page)
 const learnButtons = document.querySelectorAll('[data-toggle="learn"]');
 learnButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -31,7 +36,7 @@ learnButtons.forEach((btn) => {
   });
 });
 
-// Accordions
+// Accordions (services page)
 const accButtons = document.querySelectorAll('.acc-btn');
 accButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -50,7 +55,7 @@ const formStatus = document.getElementById('formStatus');
 const handleSubmit = (event) => {
   event.preventDefault();
   showToast("Thanks! We'll confirm shortly.");
-  if (formStatus) formStatus.textContent = "We received your request�dispatch will call soon.";
+  if (formStatus) formStatus.textContent = "We received your request—dispatch will call soon.";
   event.target.reset();
 };
 quoteForm?.addEventListener('submit', handleSubmit);
@@ -62,12 +67,16 @@ if (marqueeTrack) {
   marqueeTrack.innerHTML += marqueeTrack.innerHTML;
 }
 
-// Smooth scroll for nav links
+// Smooth scroll for same-page hash links only
 nav?.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute('href'));
-    target?.scrollIntoView({ behavior: 'smooth' });
+    const href = link.getAttribute('href') || '';
+    const isHash = href.startsWith('#');
+    if (isHash) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      target?.scrollIntoView({ behavior: 'smooth' });
+    }
     nav.classList.remove('open');
   });
 });

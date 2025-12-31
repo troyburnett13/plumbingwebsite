@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Floyd's Plumbing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav-wrap">
+    <div class="logo">
+      <div class="badge">24/7</div>
+      <span>Floyd's Plumbing</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button class="ghost" id="callNow">Call now</button>
+    </nav>
+    <button class="ghost mobile" id="navToggle">Menu</button>
+  </header>
+
+  <main>
+    <section class="strip">
+      <div class="pill">Contact</div>
+      <h1>Book your visit or request a quote.</h1>
+      <p class="lede">Tell us what you need and we'll confirm a tech and arrival time.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <form class="contact-form" id="contactForm">
+          <label>Name
+            <input type="text" name="name" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" required />
+          </label>
+          <label>Phone
+            <input type="tel" name="phone" required />
+          </label>
+          <label>Service needed
+            <input type="text" name="need" placeholder="e.g. leaking shower valve" required />
+          </label>
+          <label>Preferred date
+            <input type="date" name="date" />
+          </label>
+          <button type="submit" class="solid full">Request visit</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+      <div class="info card">
+        <h3>Call or email</h3>
+        <p>Serving the metro area with same-day availability in most neighborhoods.</p>
+        <div class="badges">
+          <span class="tag">Emergency</span>
+          <span class="tag">Residential</span>
+          <span class="tag">Commercial</span>
+        </div>
+        <div class="cta-row">
+          <a class="solid full" href="tel:18005551234">Call dispatch</a>
+          <a class="ghost full" href="mailto:hello@floydsplumbing.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">Floyd's Plumbing</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-meta">Licensed • Bonded • Insured • CSLB #000000 | 24/7 Emergency Dispatch</div>
+  </footer>
+
+  <div class="toast" id="toast">Form submitted! We'll reach out shortly.</div>
+  <script src="script.js"></script>
+</body>
+</html>
